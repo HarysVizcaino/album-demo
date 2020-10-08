@@ -1,10 +1,46 @@
 .App {
   text-align: center;
+  background-color: #191919;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.album-list {
+  flex-direction: column;
+  flex: 1;
+}
+
+.album-cover {
+  flex-direction: row;
+  max-width: 350px;
+  min-width: 350px;
+  border-bottom: solid 1px #302e2e;
+}
+
+.album-cover h3 {
+  color: #FFFFFF;
+}
+
+.album-cover h2 {
+  color: green;
+}
+
+.second {
+  color: red;
+  font-size: 32px;
+}
+
+.album-section {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 @media (prefers-reduced-motion: no-preference) {
